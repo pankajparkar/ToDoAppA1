@@ -1,0 +1,16 @@
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.Razor.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/Microsoft.Web.Infrastructure.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.Helpers.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.WebPages.Deployment.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.WebPages.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.WebPages.Razor.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.Mvc.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Net.Http.Formatting.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.Http.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/System.Web.Http.WebHost.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/Newtonsoft.Json.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/ToDoAppA1.dll.mdb
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/bin/ToDoAppA1.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/obj/Debug/ToDoAppA1.dll
+/Users/pankajparkar/Projects/ToDoAppA1/ToDoAppA1/obj/Debug/ToDoAppA1.dll.mdb

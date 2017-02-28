@@ -1,1 +1,0 @@
-﻿angular.module('todoApp', ['ui.router', 'ui.bootstrap', 'ngAnimate']);

@@ -16,8 +16,12 @@
 			main.list.push({Id: Math.random(), Name: 'Test'});
 		}
 
-		function changeAddEnable() { }
-		function changeEditEnable() { }
+		function changeAddEnable(item) { 
+			console.log(item)
+		}
+		function changeEditEnable() { 
+			console.log(item)
+		}
 
 	}
 })(window, window.angular);

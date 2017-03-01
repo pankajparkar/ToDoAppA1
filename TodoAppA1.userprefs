@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{3ADF4A36-887F-4E4E-80A6-0923F7C82826}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TodoAppA1/Global.asax.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TodoAppA1/app/todo-item/todo-item.controller.js">
     <Files>
-      <File FileName="TodoAppA1/Global.asax.cs" Line="18" Column="1" />
-      <File FileName="TodoAppA1/packages.config" Line="1" Column="1" />
+      <File FileName="TodoAppA1/app/app.component.html" Line="27" Column="4" />
+      <File FileName="TodoAppA1/app/todo-list/todo-list.component.html" Line="1" Column="1" />
+      <File FileName="TodoAppA1/app/todo-item/todo-item.component.html" Line="16" Column="8" />
+      <File FileName="TodoAppA1/app/app.component.js" Line="1" Column="1" />
+      <File FileName="TodoAppA1/app/app.controller.js" Line="23" Column="1" />
+      <File FileName="TodoAppA1/app/todo-item/todo-item.controller.js" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TodoAppA1" expanded="True">
             <Node name="TodoAppA1" expanded="True">
-              <Node name="References" expanded="True">
-                <Node name="From Packages" expanded="True" />
-              </Node>
-              <Node name="Packages" expanded="True">
-                <Node name="Microsoft.AspNet.Razor" selected="True" />
+              <Node name="app" expanded="True">
+                <Node name="todo-item" expanded="True">
+                  <Node name="todo-item.controller.js" selected="True" />
+                </Node>
+                <Node name="todo-list" expanded="True" />
               </Node>
               <Node name="Global.asax" expanded="True" />
             </Node>

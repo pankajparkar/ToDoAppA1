@@ -1,3 +1,10 @@
 ﻿<div class="todo-list">
-	<todo-item ng-repeat="item in todoList.items" item="item"></todo-item>
+	<todo-item 
+		ng-repeat="item in todoList.items" 
+		item="item" 
+		add-enable="todoList.addEnable" 
+		edit-enable="todoList.editEnable"
+		change-add-enabled="todoList.changeAddEnabled(value)"
+		change-edit-enabled="todoList.changeEditEnabled(value)">
+	</todo-item>
 </div>

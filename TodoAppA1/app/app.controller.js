@@ -1,4 +1,6 @@
 ﻿(function(window, angular, undefined){
+	'use strict';
+
 	angular.module('todoApp').controller('MainAppController', MainAppController)
 
 	MainAppController.$inject = [];
@@ -7,8 +9,8 @@
 		var main = this;
 		main.addEnable = true;
 		main.editEnable = false;
-		main.changeAddEnable = changeAddEnable;
-		main.changeEditEnable = changeEditEnable;
+		main.changeAddEnabled = changeAddEnabled;
+		main.changeEditEnabled = changeEditEnabled;
 		main.list = [];
 
 
@@ -16,10 +18,10 @@
 			main.list.push({Id: Math.random(), Name: 'Test'});
 		}
 
-		function changeAddEnable(item) { 
+		function changeAddEnabled(item) { 
 			console.log(item)
 		}
-		function changeEditEnable() { 
+		function changeEditEnabled() { 
 			console.log(item)
 		}
 

@@ -1,4 +1,6 @@
 ﻿(function(window, angular, undefined){
+	'use strict';
+
 	angular.module('todoApp').controller('MainController', MainController)
 
 	MainController.$inject = [];

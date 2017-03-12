@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{3ADF4A36-887F-4E4E-80A6-0923F7C82826}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TodoAppA1/app/todo-item/todo-item.component.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TodoAppA1/app/todo-item/todo-item.controller.js">
     <Files>
       <File FileName="TodoAppA1/app/app.route.js" Line="3" Column="28" />
-      <File FileName="TodoAppA1/app/todo-list/todo-list.component.html" Line="10" Column="7" />
-      <File FileName="TodoAppA1/app/todo-item/todo-item.component.html" Line="18" Column="7" />
+      <File FileName="TodoAppA1/app/todo-item/todo-item.controller.js" Line="13" Column="28" />
+      <File FileName="TodoAppA1/app/services/todo-list-helper.service.js" Line="5" Column="32" />
+      <File FileName="TodoAppA1/Views/Home/Index.cshtml" Line="12" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

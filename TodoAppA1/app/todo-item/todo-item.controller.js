@@ -4,16 +4,10 @@
 
 	angular.module('todoApp').controller('TodoItemController', TodoItemController)
 
-	TodoItemController.$inject = [];
+	TodoItemController.$inject = ['todoListHelperService'];
 
-	function TodoItemController(){
+	function TodoItemController(todoListHelperService){
 		var todoItem = this;
-		todoItem.addSubItem = addSubItem;
-
-		function addSubItem(item){
-			if(!item.subItems) 
-				item.subItems = [];
-			item.subItems.push({Id: Math.random(), Name: 'Sub Item', ParentId: item.Id});
-		}
+		todoItem.crud = todoListHelperService;
 	}
 })(window, window.angular);

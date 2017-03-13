@@ -19,21 +19,36 @@
 		};
 
 		function save(item){ 
+			if(!item.Id) item.Id = Math.random();
 			self.addEnable = true;
 			item.edit = false;
 			return true;
 		};
 
-		function remove(item, addEnable){
+		function remove(list, item){
 			//TOD: delete element from array
+			//Somehow get rid off $parent.$parent keywords from remove method
 			self.addEnable = true;
+			item.edit = false;
+			if(!item.Id) remove_item(list, item)
 		};
 
 		function addSubItem(item){
 			self.addEnable = false;
 			if(!item.subItems) 
 				item.subItems = [];
-			item.subItems.push({Id: Math.random(), Name: 'Sub Item', ParentId: item.Id, edit: true});
+			item.subItems.push({ParentId: item.Id, edit: true});
+		}
+
+		function remove_item (arr, value) {
+		    var b = '';
+		    for (b in arr) {
+		        if (arr[b] === value) {
+		            arr.splice(b, 1);
+		            break;
+		        }
+		    }
+		    return arr;
 		}
 	};
 

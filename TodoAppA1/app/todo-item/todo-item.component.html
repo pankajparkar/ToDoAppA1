@@ -1,18 +1,21 @@
-﻿<div class="row well" style="border: 1px solid #e7e7e7;padding-bottom: 0;">
+﻿
+
+<div class="row well" style="border: 1px solid #e7e7e7;padding-bottom: 0;">
+	{{todoItem.crud.addEnable}}
 	<form class="form-inline form-group">
-	  <div class="form-group">
-	    <i ng-if="todoCommon.addEnabled" class="glyphicon glyphicon-plus-sign" ng-click="todoItem.addSubItem(todoItem.item)"></i>
-	    <i ng-if="todoItem.item.edit" class="glyphicon glyphicon-floppy-saved" ng-click="todoItem.save({value: todoItem.item})"></i>
-	    <i ng-if="todoCommon.addEnabled" class="glyphicon glyphicon-edit" ng-click="todoItem.edit({value: todoItem.item})"></i>
-	    <i ng-if="todoItem.item.edit" class="glyphicon glyphicon-floppy-remove" ng-click="todoItem.remove({value: todoItem.item})"></i>
-	    <input type="text" class="form-control" ng-model="todoItem.item.Name" />
-			{{todoItem.addEnable}}
-	  </div>
+		<fieldset ng-disabled="!todoItem.crud.addEnable && !todoItem.item.edit">
+			<div class="form-group">
+				<button ng-if="todoItem.crud.addEnable" class="glyphicon glyphicon-plus-sign btn btn-sm" ng-click="todoItem.crud.addSubItem(todoItem.item)"></button>
+				<button ng-if="todoItem.item.edit" class="glyphicon glyphicon-floppy-saved btn btn-sm" ng-click="todoItem.crud.save(todoItem.item)"></button>
+				<button ng-if="todoItem.crud.addEnable" class="glyphicon glyphicon-edit btn btn-sm" ng-click="todoItem.crud.edit(todoItem.item)"></button>
+				<button ng-if="todoItem.item.edit" class="glyphicon glyphicon-floppy-remove btn btn-sm" ng-click="todoItem.crud.remove(todoItem.item)"></button>
+				<input type="text" class="form-control" ng-model="todoItem.item.Name" />
+			</div>
+		</fieldset>
 	</form>
 	<div class="col-sm-12" style="margin: 0 10px 0;">
 		<todo-list items="todoItem.item.subItems"
-			change-add-enabled="todoItem.changeAddEnabled(value)"
-			change-edit-enabled="todoItem.changeEditEnabled(value)">
+			add-enable="todoItem.addEnable">
 		</todo-list>
 	</div>
 </div>

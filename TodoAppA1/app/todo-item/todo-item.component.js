@@ -6,9 +6,6 @@
 		bindings: {
 			item: '<',
 			addEnable: '<',
-			editEnable: '<',
-			changeAddEnabled: '&',
-			changeEditEnabled: '&'
 		},
 		templateUrl: '/app/todo-item/todo-item.component.html',
 		controller: 'TodoItemController',

@@ -1,10 +1,10 @@
 ﻿<div class="row well" style="border: 1px solid #e7e7e7;padding-bottom: 0;">
 	<form class="form-inline form-group">
 	  <div class="form-group">
-	    <i class="glyphicon glyphicon-plus-sign" ng-click="todoItem.addSubItem(todoItem.item)"></i>
-	    <i class="glyphicon glyphicon-floppy-saved" ng-click="todoItem.save({value: todoItem.item})"></i>
-	    <i class="glyphicon glyphicon-edit" ng-click="todoItem.edit({value: todoItem.item})"></i>
-	    <i class="glyphicon glyphicon-floppy-remove" ng-click="todoItem.remove({value: todoItem.item})"></i>
+	    <i ng-if="todoCommon.addEnabled" class="glyphicon glyphicon-plus-sign" ng-click="todoItem.addSubItem(todoItem.item)"></i>
+	    <i ng-if="todoItem.item.edit" class="glyphicon glyphicon-floppy-saved" ng-click="todoItem.save({value: todoItem.item})"></i>
+	    <i ng-if="todoCommon.addEnabled" class="glyphicon glyphicon-edit" ng-click="todoItem.edit({value: todoItem.item})"></i>
+	    <i ng-if="todoItem.item.edit" class="glyphicon glyphicon-floppy-remove" ng-click="todoItem.remove({value: todoItem.item})"></i>
 	    <input type="text" class="form-control" ng-model="todoItem.item.Name" />
 			{{todoItem.addEnable}}
 	  </div>

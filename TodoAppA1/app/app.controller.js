@@ -14,8 +14,8 @@
 		main.list = [];
 
 
-		for(var i=0; i< 4;i++){
-			main.list.push({Id: Math.random(), Name: 'Test'});
+		for(var i=0; i< 3;i++){
+			main.list.push({Id: Math.random(), Name: 'Test '+ (i+1)});
 		}
 
 		function changeAddEnabled(item) { 

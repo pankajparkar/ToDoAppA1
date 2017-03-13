@@ -30,7 +30,9 @@
 			//Somehow get rid off $parent.$parent keywords from remove method
 			self.addEnable = true;
 			item.edit = false;
-			if(!item.Id) remove_item(list, item)
+			if(!item.Id) {
+				remove_item(list, item);
+			}
 		};
 
 		function addSubItem(item){

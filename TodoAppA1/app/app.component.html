@@ -21,6 +21,22 @@
 </header>
 <section>
 	<div class="container">
+		<div class="row">
+			<div>
+				<label class="btn" uib-btn-radio ng-model="filter.Status">
+					All
+				</label>
+				<label class="btn" uib-btn-radio ng-model="filter.Status">
+					Todo
+				</label>
+				<label class="btn" uib-btn-radio ng-model="filter.Status">
+					In Progress
+				</label>
+				<label class="btn" uib-btn-radio ng-model="filter.Status">
+					Completed
+				</label>
+			</div>
+		</div>
 		<todo-list 
 			add-enable="main.addEnable" 
 			items="main.list">
@@ -30,6 +46,5 @@
 <!--<footer class="container">
 	<div style="background-color: #f8f8f8;">
 		Here is simple Footer
-
 	</div>
 </footer>-->

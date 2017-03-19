@@ -1,4 +1,4 @@
-﻿<div class="row well list-item" style="border: 1px solid #e7e7e7;padding-bottom: 0;" ng-class="{ 'active': todoItem.item.edit}">
+﻿<li class="list-item" ng-class="{ 'active': todoItem.item.edit}">
 	<form class="form-inline form-group">
 		<fieldset ng-disabled="!todoItem.crud.addEnable && !todoItem.item.edit">
 			<span class="form-group">
@@ -23,13 +23,22 @@
 					ng-click="todoItem.crud.remove($parent.$parent.todoList.items, todoItem.item)">
 				</button>
 			</span>
-			<input ng-disabled="!todoItem.item.edit" type="text" class="form-control" ng-model="todoItem.item.Name"/>
+			<input ng-disabled="!todoItem.item.edit" type="text" class="form-control" ng-model="todoItem.item.Name"/>{{todoItem.item.Status}}
+			<span class="form-btn-group">
+				<label class="btn btn-primary" uib-btn-radio ng-model="todoItem.item.Status" ng-value="1">
+					Todo
+				</label>
+				<label class="btn btn-primary" uib-btn-radio ng-model="todoItem.item.Status" ng-value="2">
+					In Progress
+				</label>
+				<label class="btn btn-primary" uib-btn-radio ng-model="todoItem.item.Status" ng-value="3">
+					Completed
+				</label>
+			</span>
 		</fieldset>
 	</form>
-	<div class="col-sm-12" style="margin: 0 10px 0;">
-		<todo-list items="todoItem.item.subItems"
-			add-enable="todoItem.addEnable"
-			ng-if="todoItem.item.subItems.length">
-		</todo-list>
-	</div>
-</div>
+	<todo-list items="todoItem.item.subItems"
+		ng-if="todoItem.item.subItems.length"
+		add-enable="todoItem.addEnable">
+	</todo-list>
+</li>

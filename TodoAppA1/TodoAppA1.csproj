@@ -151,6 +151,7 @@
     <Content Include="app\todo-list-wrapper\todo-list-wrapper.directive.js" />
     <Content Include="app\todo-list-wrapper\todo-list-wrapper.controller.js" />
     <Content Include="app\services\todo-list-helper.service.js" />
+    <Content Include="app\services\todo-api.service.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="fonts\glyphicons-halflings-regular.woff2" />

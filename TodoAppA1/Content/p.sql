@@ -1,0 +1,9 @@
+
+
+CREATE PROCEDURE Test2
+AS
+SELECT 1O
+
+select 1
+
+EXEC Test2
